@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+    <style>
+        body {
+            margin-top: 180px;
+            background-color: cornsilk;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .button-container {
+            display: inline-block;
+            margin: 20px;
+        }
+        button {
+            width: 150px;
+            margin-right: 30px;
+            padding: 10px;
+            border: 2px outset;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .btn1 {
+            border-color: #fa8f8f;
+            background-color: #faebd7;
+        }
+        .btn1:hover {
+            font-weight: bold;
+            background-color: rgba(255, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        .btn2 {
+            border-color: #04e704;
+            background-color: #c8e6c9;
+        }
+        .btn2:hover {
+            font-weight: bold;
+            background-color: rgba(0, 128, 0, 0.6);
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+        }
+        .btn3 {
+            border-color: #4848fc;
+            background-color: #b3d9ff;
+        }
+        .btn3:hover {
+            font-weight: bold;
+            background-color: rgba(0, 0, 255, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript addEventListener() Hands-On</h1>
+    <p>Click on the button below to see different actions:</p>
+
+    <div class="button-container">
+        <button id="my1btn" class="btn1">Button 1</button>
+    </div>
+    <div class="button-container">
+        <button id="my2btn" class="btn2">Button 2</button>
+    </div>
+    <div class="button-container">
+        <button id="my3btn" class="btn3">Button 3</button>
+    </div>
+
+    <script>
+        document.getElementById("my1btn").addEventListener("click", afunction);
+        document.getElementById("my2btn").addEventListener("click", bfunction);
+        document.getElementById("my3btn").addEventListener("click", cfunction);
+        
+        function afunction() {
+            alert("Button 1 was clicked!");
+        }
+        
+        function bfunction() {
+            alert("Button 2 was clicked!");
+        }
+        
+        function cfunction() {
+            alert("Button 3 was clicked!");
+        }
+    </script>
+</body>
+</html>
